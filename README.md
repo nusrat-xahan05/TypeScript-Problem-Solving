@@ -32,10 +32,10 @@ But it **cannot** be used directly without checking the type first. It requires 
 
 ```
 let value: unknown = "hello";
-// value.toUpperCase(); ❌ Error. Cannot use before type checking.
+// value.toUpperCase(); // Error. Cannot use before type checking.
 
 if (typeof value === "string") {
-  console.log(value.toUpperCase()); // ✅ Safe
+  console.log(value.toUpperCase()); // Safe
 }
 ```
 
